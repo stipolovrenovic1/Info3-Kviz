@@ -1,0 +1,325 @@
+body
+{
+	margin-top: 10%;
+	background-color: #BEE1FF;
+	font-family: verdana;
+}
+
+@-webkit-keyframes fadeout {
+    0% 
+    {
+    	-webkit-opacity: 1;
+    	-moz-opacity: 1; 
+    	-o-opacity: 1;
+    	-ms-opacity: 1;
+    	opacity: 1;
+    }
+    100%
+    {
+    	-webkit-opacity: 0; 
+    	-moz-opacity: 0;
+    	-o-opacity: 0;
+    	-ms-opacity: 0;
+    	opacity: 0; 
+    }
+}
+
+@-webkit-keyframes fadein 
+{
+	0% 
+	{
+		-webkit-opacity: 0; 
+		-moz-opacity: 0;
+		-o-opacity: 0;
+		-ms-opacity: 0;
+		opacity: 0;
+	}
+    100% 
+    { 
+    	-webkit-opacity: 1;
+    	-moz-opacity: 1;
+    	-o-opacity: 1;
+    	-ms-opacity: 1;
+    	opacity: 1; 
+    }
+}
+
+@-webkit-keyframes onhoverc
+{
+	0% 
+	{
+		-webkit-background-color: #2B78BB;
+		-moz-background-color: #2B78BB;
+		-o-background-color: #2B78BB;
+		-ms-background-color: #2B78BB;
+	    background-color: #2B78BB;
+	}
+	100%
+	{	
+	 	-webkit-background-color: grey;
+	 	-moz-background-color: grey; 
+	 	-o-background-color: grey;
+	 	-ms-background-color: grey;
+		background-color: grey; 
+	}
+}
+
+@-webkit-keyframes clickbtn
+{
+	0% 
+	{ 
+		-webkit-background-color: #2B78BB;
+		-moz-background-color: #2B78BB; 
+		-o-background-color: #2B78BB;
+		-ms-background-color: #2B78BB;
+		background-color: #2B78BB;
+
+		-webkit-color: white;
+		-moz-color: white;
+		-o-color: white;
+		-ms-color: white;
+		color: white;
+	}
+	100% 
+	{ 
+		-webkit-background-color: white;
+		-moz-background-color: white;
+		-o-background-color: white;
+		-ms-background-color: white;
+		background-color: white;
+		
+		-webkit-color: black;
+		-moz-color: black;
+		-o-color: black;
+		-ms-color: black;
+		color: black;
+	}
+}
+
+button
+{
+	background-color: #2B78BB;
+	width: 15%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	border: none;
+	border-radius: 3px;
+	color: white;
+	font-weight: bold;
+}
+
+button:hover:not([disabled])
+{
+	-webkit-animation: onhoverc 0.5s forwards;
+	-moz-animation: onhoverc 0.5s forwards;
+	-o-animation: onhoverc 0.5s forwards;
+	-ms-animation: onhoverc 0.5s forwards;
+	animation: onhoverc 0.5s forwards;
+}
+
+button:active:not([disabled])
+{
+	-webkit-animation: clickbtn 0s forwards;
+	-moz-animation: clickbtn 0s forwards;
+	-o-animation: clickbtn 0s forwards;
+	-ms-animation: clickbtn 0s forwards;
+	animation: clickbtn 0s forwards;
+}
+
+#slideTraka
+{
+	margin-bottom: 5%;
+	margin-top: -8%;
+	margin-left: 15%;
+}
+
+#slideTraka button
+{
+	margin-right: 1%;
+	width: 20%;
+	padding: 25px;
+	font-size: 30px;
+	font-weight: 900;
+}
+
+button:disabled
+{
+	background-color: grey;
+	opacity: 0.5;
+}
+
+#warning
+{
+	background-color: red;
+	display: none;
+	z-index: 100;
+	color: white;
+	padding: 5px;
+	text-align: center;
+	margin-bottom: 50px;
+	width: 500px;
+	margin-left: 508px;
+	font-weight: bold;
+	border-radius: 5px;
+}
+
+#ostaliGumbi
+{
+	margin-left: 29%;
+}
+
+#ostaliGumbi button
+{
+	width: 30%;
+	height: 100px;
+	font-size: 20px;
+}
+
+#odgovori
+{
+	margin-left: 41%;
+}
+
+#odgovori button
+{
+	margin-right: 2%;
+	height: 50px;
+	font-size: 20px;
+}
+
+#rezultatiGumb
+{
+	display: none;
+}
+
+#noviKvizGumb
+{
+	display: none;
+	margin-left: 15%;
+}
+
+h2
+{
+	-webkit-animation: fadein 1.5s forwards;
+	-moz-animation: fadein 1.5s forwards;
+	-o-animation: fadein 1.5s forwards;
+	-ms-animation: fadein 1.5s forwards;
+	animation: fadein 1.5s forwards;
+	background-color: lightBlue;
+	width: 35%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 80px;
+	padding: 20px;
+	border-radius: 5px;
+}
+
+@media only screen and (max-width: 600px)
+{
+
+	body
+	{
+		margin-top: 25%;
+	}
+
+	h2
+	{
+		font-size: 100%;
+		padding: 40px;
+	}
+
+	#slideTraka
+	{
+		margin-left: 10%;
+	}
+
+	#slideTraka button
+	{
+		width: 70px;
+		height: 10px;
+		font-size: 20px;
+		padding-top: 10px;
+		padding-bottom: 40px;
+	}
+
+	#ostaliGumbi
+	{
+		margin-left: 25%;
+	}
+
+	#ostaliGumbi button
+	{
+		font-size: 100%;
+		height: 100%;
+		width: 100px;
+	}
+
+	#odgovori
+	{
+		margin-left: 25%;
+	}
+
+	#odgovori button
+	{
+		font-size: 20px;
+		width: 100px;
+	}
+}
+
+@media only screen and (max-width: 550px) and (min-width: 500px)
+{
+	#slideTraka
+	{
+		margin-left: 20%;
+	}
+
+	#odgovori
+	{
+		margin-left: 30%;
+	}
+
+	#ostaliGumbi
+	{
+		margin-left: 30%;
+	}
+
+	#ostaliGumbi button
+	{
+		padding: 15px;
+	}
+}
+
+@media only screen and (max-width: 300px)
+{
+	#slideTraka button
+	{
+		width: 20%;
+		height: 5px;
+		font-size: 15px;
+		padding-top: 10px;
+		padding-bottom: 35px;
+		padding-left: 20px;
+	}
+
+	#odgovori
+	{
+		margin-left: 20%;
+	}
+
+	#odgovori button
+	{
+		width: 75px;
+	}
+
+	#ostaliGumbi
+	{
+		margin-left: 15%;
+	}
+
+	#ostaliGumbi button
+	{
+		width: 90px;
+		font-size: 15px;
+	}
+}
